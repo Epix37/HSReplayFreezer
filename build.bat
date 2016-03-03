@@ -16,3 +16,5 @@ mv HSReplay\python\build\exe.win32-3.4\pyexpat.pyd build\pyexpat.pyd
 mv HSReplay\python\build\exe.win32-3.4\python34.dll build\python34.dll
 rd HSReplay /s /q
 @echo %VERSION%>> build/version
+python create_zip.py %VERSION%
+rd build /s /q
